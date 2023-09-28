@@ -38,9 +38,7 @@ int cpy(std::string str1, std::string str2)
         str2[i] = str1[i];
     }
 
-    std::cout << str1;
-    std::cout << "\n";
-    std::cout << str2;
+    std::cout << "copied string " << str2;
 }
 
 std::string concatenate(std::string str1, std::string str2)
@@ -77,8 +75,20 @@ int main()
 {
 
     std::string str1;
-    std::cout << "enter string: ";
+    std::cout << "enter string 1: ";
     std::cin >> str1;
 
+    std::string str2;
+    std::cout << "enter string 2: ";
+    std::cin >> str2;
+
+    len(str1);
+    std::cout << "\n";
+    check(str1, str2);
+    std::cout << "\n";
+    cpy(str1, str2);
+    std::cout << "\n";
+    concatenate(str1, str2);
+    std::cout << "\n";
     reverse(str1);
 }

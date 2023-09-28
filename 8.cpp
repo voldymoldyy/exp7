@@ -65,6 +65,11 @@ int reverse(std::string str1)
     }
     r[i] = '\0';
 
+    for (int i = 0; r[i] != '\0'; i++)
+    {
+        std::cout << r[i];
+    }
+
     std::cout << r;
 }
 

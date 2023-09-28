@@ -11,7 +11,7 @@ std::string cpy(std::string enter)
     }
     copy[i] = '\0';
 
-    for (int k = 0; copy[i] != '\0'; k++)
+    for (int k = 0; copy[k] != '\0'; k++)
     {
         std::cout << copy[k];
     }
